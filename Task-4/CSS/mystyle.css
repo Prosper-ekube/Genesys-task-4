@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, "Manrope", Geneva, Verdana, sans-serif;
+}
+
+#logo {
+  height: 23px;
+  top: 26px;
+  margin-left: 104px;
+  margin-right: 118px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.li-2 {
+  line-height: 27px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #636363;
+}
+
+.li-1 {
+  line-height: 27px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+nav {
+  height: 135px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  float:left;
+}
+
+.li-3{
+    margin-top:30px;
+}
+
+a {
+    text-decoration: none;
+    color: #065666;
+}
+.li-1, .li-2{
+  margin-top: 50px;
+  margin-right:54px;
+}
+
+.heading-1 {
+  line-height: 87.42px;
+  font-weight: 700;
+  text-align: center;
+  color: #373737;
+  font-size: 64px;
+  margin-top: 64px;
+}
+
+.sub-heading-1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 43px;
+  margin-top: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #373737;
+}
+
+#button-con {
+  margin-left: 366px;
+  margin-top: 32px;
+}
+#img-1 {
+  margin-top: 64px;
+  margin-left: 50px;
+  height: 637px;
+  width: 1260px;
+  border-radius: 0px;
+}
+
+.heading-2 {
+  font-size: 32px;
+  color: #373737;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sub-heading-2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #373737;
+  margin-top: 16px;
+}
+
+select {
+  border: 1px solid white;
+}
+
+button {
+  height: 75px;
+  width: 278px;
+  left: 1026.8px;
+  top: 0px;
+  border-radius: 16px;
+  padding: 24px 40px 24px 40px;
+  background: #6fc247;
+  border: 2px solid #6fc247;
+}
+
+.button-text {
+  width: 158px;
+  line-height: 27px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.sign-up {
+  background-color: #ffffff;
+  border: 1px solid #6fc247;
+  margin-left: 30px;
+}
+
+.sub-sign-up {
+  color: #6fc247;
+}
+
+#img-con {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  /*margin-left: 115px;*/
+  row-gap: 24px;
+  column-gap: 18px;
+  margin-top: 32px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img-2 {
+  height: 117px;
+  width: 307px;
+  background-color: #f9f9f9;
+}
+
+#why-con {
+  background-color: #111111;
+  color: white;
+  height: 456px;
+  border-radius: 0px;
+  padding: 72px 103px 72px 103px;
+  letter-spacing: 0em;
+  margin-top: 119px;
+}
+
+#main-why h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 55px;
+  letter-spacing: 0em;
+}
+
+#why-con p {
+  color: #d7d7d7;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#main-why p {
+  margin-top: 16px;
+}
+
+.sub p {
+  margin-top: 24px;
+}
+.middle-sub {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#img-3 {
+  height: 936px;
+  width: 731px;
+  border-radius: 0px;
+}
+#sub-con {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.sub h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+#final-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+#final-wordings {
+  margin-right: 84px;
+}
+
+#main-wording h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+}
+
+#main-wording p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin-top: 16px;
+}
+
+.sub-wording {
+  margin-left: 30px;
+  margin-top: 65px;
+}
+
+.sub-wording h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+}
+
+.sub-wording p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.middle-wording {
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+#last-button {
+  margin-left: 516px;
+  margin-top: 64px;
+  margin-bottom: 232px;
+}
