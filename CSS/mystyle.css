@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --heading-txt-color: #373737;
+  --btn-bg-color: #6fc247;
+  --font-size-big-scree: 16px;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, "Manrope", Geneva, Verdana, sans-serif;
   display: grid;
@@ -15,10 +21,15 @@ header {
 
 #logo {
   height: 13.8px;
-  /*top: 15.6px;*/
   margin-right: 420.8px;
   margin-left: 35px;
   justify-self: center;
+}
+
+@media only screen and (min-width: 1300px) {
+  ul {
+    justify-content: center;
+  }
 }
 
 .li-2 {
@@ -33,7 +44,7 @@ header {
 .li-1 {
   line-height: 27px;
   font-style: normal;
-  font-size: 16px;
+  font-size: var(--font-size-big-screen);
   font-weight: 600;
   line-height: 27px;
 }
@@ -41,7 +52,6 @@ header {
 nav {
   position: fixed;
   display: flex;
-  justify-content: center;
   height: 75px;
   left: 0px;
   top: 0px;
@@ -75,15 +85,14 @@ a {
 }
 .li-1,
 .li-2 {
-  /*margin-top: 30px;*/
-  margin-right: 32.4px;
+  margin-right: 40px;
 }
 
 .heading-1 {
   line-height: 87.42px;
   font-weight: 700;
   text-align: center;
-  color: #373737;
+  color: var(--heading-txt-color);
   font-size: 51.2px;
   margin-top: 132px;
 }
@@ -95,13 +104,10 @@ a {
   margin-top: 25.6px;
   letter-spacing: 0em;
   text-align: center;
-  color: #373737;
+  color: var(--heading-txt-color);
 }
 
 #button-con {
-  /*margin-left: auto;
-  margin-right: auto;
-  width:max-content;*/
   justify-self: center;
   margin-top: 24px;
 }
@@ -110,30 +116,29 @@ button {
   height: 48px;
   width: 182.8px;
   border-radius: 9.6px;
-  background: #6fc247;
-  border: 2px solid #6fc247;
+  background: var(--btn-bg-color);
+  border: 2px solid var(--btn-bg-color);
 }
 
 .button-text {
   width: 98.8px;
   line-height: 16.2px;
   font-style: normal;
-  font-size: 16px;
+  font-size: var(--font-size-big-screen);
   color: #ffffff;
 }
 
 .sign-up {
   background-color: #ffffff;
-  border: 1px solid #6fc247;
+  border: 1px solid var(--btn-bg-color);
   margin-left: 30px;
 }
 
 .sub-sign-up {
-  color: #6fc247;
+  color: var(--btn-bg-color);
 }
 
 #last-button {
-  /*margin-left: 516px;*/
   justify-self: center;
   margin-top: 64px;
   margin-bottom: 232px;
@@ -152,7 +157,7 @@ main {
 
 .heading-2 {
   font-size: 25.6px;
-  color: #373737;
+  color: var(--heading-txt-color);
   font-weight: 700;
   line-height: 35.2px;
   letter-spacing: 0em;
@@ -170,7 +175,7 @@ main {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-  color: #373737;
+  color: var(--heading-txt-color);
   margin-top: 12.8px;
 }
 
@@ -204,6 +209,7 @@ select {
   padding: 58.32px 83.43px 58.32px 88.43px;
   letter-spacing: 0em;
   margin-top: 96.39px;
+  /*justify-self: center;*/
 }
 
 #main-why h1 {
@@ -215,7 +221,7 @@ select {
 
 #why-con p {
   color: #d7d7d7;
-  font-size: 16px;
+  font-size: var(--font-size-big-screen);
   font-weight: 500;
   line-height: 24px;
 }
@@ -288,7 +294,7 @@ select {
 }
 
 .sub-wording p {
-  font-size: 16px;
+  font-size: var(--font-size-big-screen);
   font-weight: 400;
   line-height: 24.3px;
   letter-spacing: 0em;
@@ -303,7 +309,8 @@ select {
   display: none;
 }
 
-.mobile {
+.mobile__2,
+.mobile__3 {
   display: none;
 }
 
@@ -370,42 +377,6 @@ select {
 }
 
 @media only screen and (max-width: 670px) {
-  .nav-bar.mobile {
-    .li-1 {
-      display: block;
-      font-size: 85px;
-    }
-  }
-
-  .nav-bar.mobile ul {
-    margin-top: 4%;
-    margin-left: 9%;
-  }
-
-  .nav-bar.mobile li {
-    padding-bottom: 15%;
-  }
-
-  .nav-bar.mobile label {
-    display: block;
-    font-size: 85px;
-  }
-
-  .fa-bars.fa-solid {
-    font-size: 60px;
-    padding-right: 45px;
-    padding-top: 28px;
-  }
-
-  nav {
-    height: 115px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
-  }
-
-  #logo {
-    height: 22.8px;
-  }
-
   #img-con {
     grid-template-columns: 380px 380px 380px;
     gap: 48px;
@@ -447,13 +418,13 @@ select {
 
   .sign-up {
     background-color: #ffffff;
-    border: 1px solid #6fc247;
+    border: 1px solid var(--btn-bg-color);
     margin-top: 30px;
     margin-left: 0px;
   }
 
   .sub-sign-up {
-    color: #6fc247;
+    color: var(--btn-bg-color);
   }
 
   .heading-2 {
@@ -518,7 +489,7 @@ select {
     display: none;
   }
 
-  .mobile {
+  .mobile__2 {
     display: block;
   }
 
@@ -555,7 +526,7 @@ select {
 
   .sub-wording h3 {
     font-size: 31.2px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 26.73px;
     letter-spacing: 0em;
   }
@@ -570,6 +541,74 @@ select {
 
   #middle-wording {
     margin: 71.28px 0px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  nav {
+    height: 105px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  }
+
+  .fa-bars.fa-solid {
+    font-size: 52px;
+    padding-right: 48px;
+  }
+
+  #logo {
+    height: 18.8px;
+  }
+
+  #final-wordings {
+    margin-bottom: 88.04px;
+  }
+
+  #main-wording h2 {
+    font-size: 50.92px;
+    font-weight: 700;
+  }
+
+  #main-wording p {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+
+  .sub-wording {
+    margin-left: 28px;
+    margin-top: 52.65px;
+  }
+
+  .sub-wording h3 {
+    font-size: 38.2px;
+    font-weight: 700;
+    line-height: 26.73px;
+    letter-spacing: 0em;
+  }
+
+  .sub-wording p {
+    font-size: 35px;
+    padding: 12px 0px 0px 0px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+
+  #img-con {
+    grid-template-columns: 580px 580px;
+    gap: 48px;
+    margin-top: 32px;
+  }
+
+  .img-2 {
+    width: 580px;
+    height: 220px;
+    padding-top: 60px;
+  }
+
+  .img-2.aa {
+    padding-top: 75px;
   }
 }
 
@@ -604,6 +643,70 @@ select {
 
   #logo {
     height: 25.8px;
+  }
+
+  .mobile__3 {
+    display: block;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 52px;
+    margin-top: 25.6px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--heading-txt-color);
+  }
+
+  .sub-heading-1 {
+    display: none;
+  }
+
+  .sub-heading-2 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-top: 12.8px;
+  }
+
+  #why-con {
+    letter-spacing: 1px;
+    height: 1120.36px;
+    padding: 70px 0px 0px 90px;
+  }
+
+  #main-why h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 44.55px;
+  }
+
+  #why-con p {
+    font-size: 45px;
+    line-height: 52px;
+    padding-top: 18px;
+  }
+
+  .sub p {
+    margin-top: 15px;
+  }
+
+  .sub h3 {
+    font-size: 48.2px;
+  }
+
+  #img-con {
+    grid-template-columns: 900px;
+    gap: 48px;
+    margin-top: 92px;
+  }
+
+  .img-2 {
+    width: 900px;
+    height: 300px;
+    padding-top: 60px;
+  }
+
+  .img-2.aa {
+    padding-top: 75px;
   }
 }
 
