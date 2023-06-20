@@ -14,11 +14,10 @@
 <body>
     <header>
         <nav class="nav-bar" id="navBar">
+            <div>
+                <img class="li-0" id="logo" src="Images\Logo.png">
+            </div>
             <ul>
-                <li><a>
-                        <img class="li-0" id="logo" src="Images\Logo.png">
-                    </a>
-                </li>
                 <li class="li-1"><a href="#">Home</a></li>
                 <li class="li-2">
                     <div class="select-ele">
@@ -38,40 +37,48 @@
                         <select name="company"></select>
                     </div>
                 </li>
-                <li class="li-3"><button>
+                <li class="li-3">
+                    <button>
                         <div>
                             <span class="button-text">Request a Demo</span>
                         </div>
-                    </button></li>
+                    </button>
+                </li>
             </ul>
             <i class="fa-solid fa-bars" onclick="showMobileNav()"></i>
         </nav>
-        <div class="centred-div">
-            <h1 class="heading-1" id="home">The World's Leading Business<br>Valuation Software</h1>
-            <h3 class="sub-heading-1">Valutico provides the financial services industry and valuation experts with
-                data-<br>driven tools to perform accurate company valuations faster and more accurately<br>than ever
+
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-section__con-1">
+            <h1 id="home">The World's Leading Business<br>Valuation Software</h1>
+            <h3>
+                Valutico provides the financial services industry and valuation<br>experts with
+                data-driven tools to perform accurate company<br>valuations faster and more accurately than ever
                 before.
             </h3>
-            <h3 class="mobile__3">Valutico provides the financial services industry<br>and valuation experts with
-                data-driven tools to perform<br>accurate company valuations faster and more<br>accurately than ever before.
-            </h3>
+            <!--<h3 class="mobile__3">Valutico provides the financial services industry<br>and valuation experts with
+                data-driven tools to perform<br>accurate company valuations faster and more<br>accurately than ever
+                before.
+            </h3>-->
+            <div id="button-con">
+                <button>
+                    <span class="button-text">Request a Demo</span>
+                </button>
+                <button class="sign-up">
+                    <span class="sub-sign-up button-text">Sign up/Login</span>
+                </button>
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="button-con">
-            <button>
-                <span class="button-text">Request a Demo</span>
-            </button>
-            <button class="sign-up">
-                <span class="sub-sign-up button-text">Sign up/Login</span>
-            </button>
+        <div id="img-1">
+            <img src="Images\image 1.png">
         </div>
-        <img id="img-1" src="Images\image 1.png">
-        <div class="centred-div">
+        <div class="hero-section__con-2">
             <h2 class="heading-2">Trusted by Hundreds of Financial Firms in 75 Countries</h2>
-            <h3 class="sub-heading-2">Our team of more than 50 employees is globally distributed and serves both
+            <h4 class="sub-heading-2">Our team of more than 50 employees is globally distributed and serves both
                 national and international clients in<br>over 75 countries.
-            </h3>
+            </h4>
         </div>
         <div id="img-con">
             <div class="img-2"><img src="Images\image 2.png">
@@ -102,33 +109,22 @@
         <div id="why-con">
             <div id="main-why">
                 <h1>Why Valutico?</h1>
-                <p class="desktop">An award-winning fintech providing a range of company valuation solutions, Valutico
-                    provides<br>the
-                    financial services industry and valuation experts with data-driven tools.</p>
-                <p id="heading__p" class="mobile__2">An award-winning fintech providing a range of company<br>valuation
-                    solutions, Valutico provides the
-                    financial services<br>industry and valuation experts with data-driven tools.</p>
+                <p>An award-winning fintech providing a range of company valuation solutions, Valutico
+                    provides<br>the financial services industry and valuation experts with data-driven tools.</p>
             </div>
             <div id="sub-con">
                 <div class="sub" id="first-sub">
                     <h3>Secure</h3>
-                    <p class="desktop">Private by default, creating a safe space<br>around your projects and your data.
+                    <p>Private by default, creating a safe space<br>around your projects and your data.
                     </p>
-                    <p id="first-sub__p" class="mobile__2">Private by default, creating a safe space around<br>your
-                        projects and your data.</p>
                 </div>
                 <div class="sub" id="middle-sub">
                     <h3>Reliable</h3>
-                    <p class="desktop">Created by valuation experts for valuation<br>professionals.</p>
-                    <p id="middle-sub__p" class="mobile__2">Created by valuation experts for valuation<br>professionals.
-                    </p>
+                    <p>Created by valuation experts for valuation<br>professionals.</p>
                 </div>
                 <div class="sub" id="last-sub">
                     <h3>Dedicated to your success</h3>
-                    <p class="desktop">24/7 support and multi-language<br>capabilities to support your needs.</p>
-                    <p id="last-sub__p" class="mobile__2">24/7 support and multi-language capabilities<br>to support
-                        your
-                        needs.</p>
+                    <p>24/7 support and multi-language<br>capabilities to support your needs.</p>
                 </div>
             </div>
         </div>
@@ -137,8 +133,7 @@
                 <div id="main-wording">
                     <h2>Accurate Valuation in Minutes</h2>
                     <p>Find the company data you need in seconds, with<br>3TB of global financial data featuring almost
-                        1
-                        million<br>transactions and over 50,000 thousand comparable<br>peers</p>
+                       1 million<br>transactions and over 50,000 thousand comparable<br>peers</p>
                 </div>
                 <div class="sub-wording">
                     <h3>Personalise Your Reports</h3>
@@ -158,12 +153,12 @@
                         you need.</p>
                 </div>
             </div>
-            <div>
-                <img id="img-3" src="Images\image.png">
+            <div id="img-3">
+                <img src="Images\image.png">
             </div>
         </div>
-        <button id="last-button">
-            <div>
+        <button id="last-button-con">
+            <div id="last-button">
                 <span class="button-text">Request a Demo</span>
             </div>
         </button>
